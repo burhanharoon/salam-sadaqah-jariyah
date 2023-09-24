@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.open {
+  top: 68px;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .open {
+    top: 0;
+  }
+}
+
+.button {
+  transition: all 0.3s;
+}
+.button:hover {
+  box-shadow: 0px 5px 10px -5px #0057ab;
+  transform: scale(1.03);
+}
+.button:active {
+  box-shadow: 0px 4px 8px #0065c8;
+  transform: scale(0.98);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 100%;
+}
+/* .css-hnss3f-MuiInputBase-root-MuiOutlinedInput-root {
+  height: 45px;
+} */
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: #cfd8dc;
+}
+.MuiTabs-scrollButtons.Mui-disabled {
+  opacity: 0.3;
+}
+
+.Tab {
+  font-weight: 500;
+  color: #05060e;
+}
+.Tab.Mui-selected {
+  background-color: #fbefbb;
+  color: #05060e;
+  font-weight: 900;
+}
+
+.toggleProfile {
+  display: flex !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  height: -webkit-fill-available !important;
+}
+@media (min-width: 768px) {
+  .toggleProfile {
+    height: 100% !important;
+  }
+}
+
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  word-break: break-all;
+}
+
+.mobile-navbar-close {
+  padding-top: 177px;
+}
+
+.mobile-navbar-open {
+  padding-top: 39px;
+}
+
+.medium-screen-navbar-close {
+  padding-top: 186px;
+}
+
+.medium-screen-navbar-open {
+  padding-top: 60px;
+}
+
+.large-screen-navbar-close {
+  padding-top: 179px;
+}
+.large-screen-navbar-open {
+  padding-top: 100px;
+}
