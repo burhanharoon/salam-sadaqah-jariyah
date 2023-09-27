@@ -17,6 +17,7 @@ export const languages = {
       (and counting). Aiming to free everyone from the shakles of this
       disturbing addiction.
     `,
+    supportButton: 'Donate to Support',
     disclaimer:
       'Salam is a Sadaqah Jariyah. It is not profit-oriented, your donations make a difference.',
     footer: ['Terms of Service', 'Privacy Policy', 'Press Kit', 'Support'],
@@ -38,6 +39,7 @@ export const languages = {
       </span>
       (und es werden immer mehr). Ziel ist es, jeden von dieser belastenden Sucht zu befreien.
     `,
+    supportButton: 'Spenden zur Unterstützung',
     disclaimer:
       'Salam ist eine Sadaqah Jariyah. Es ist nicht profitorientiert, Ihre Spenden machen einen Unterschied.',
     footer: [
@@ -64,6 +66,7 @@ export const languages = {
       </span>
       (y seguimos contando). Nuestro objetivo es liberar a todos de esta perturbadora adicción.
     `,
+    supportButton: 'Donar para apoyar',
     disclaimer:
       'Salam es una Sadaqah Jariyah. No tiene fines de lucro, sus donaciones hacen la diferencia.',
     footer: [
@@ -91,6 +94,7 @@ export const languages = {
     (et cela continue d'augmenter). Notre objectif est de libérer tout le monde de cette
     addiction troublante.
   `,
+    supportButton: 'Faire un don pour soutenir',
     disclaimer:
       "Salam est une Sadaqah Jariyah. Ce n'est pas orienté vers le profit, vos dons font la différence.",
     footer: [
@@ -118,6 +122,7 @@ export const languages = {
     (والعد مستمر). هدفنا هو تحرير الجميع من قيود هذه
     الإدمان المزعج.
   `,
+    supportButton: 'التبرع للدعم',
     disclaimer:
       'سلام هو صدقة جارية. إنه ليس هدفه تحقيق أرباح، تبرعاتكم تحدث فارقًا.',
     footer: ['شروط الخدمة', 'سياسة الخصوصية', 'مجموعة الصحافة', 'الدعم'],
@@ -129,7 +134,35 @@ export const languages = {
     description: `
     Ücretsiz kullanılabilen bir uygulama olan Salam, pornografik içeriğe erişimi engelliyor. Salam, 1.000'den fazla yetişkin web sitesini ve sayısı sürekli artan enjekte edilmiş yasadışı görüntüler içeren 5.000'den fazla web sitesini engelliyor. Amacımız herkesi bu rahatsız edici bağımlılığın zincirlerinden kurtarmaktır.
   `,
+    supportButton: 'Desteklemek için bağış yap',
     disclaimer: `Salam, kar amacı gütmeyen bir Sadaka-i cariye'dir. Bağışlarınız fark yaratır.`,
     footer: [`Hizmet Şartları`, `Gizlilik Politikası`, `Basın Kit`, `Desteği`],
+  },
+  Russian: {
+    icon: '🇷🇺',
+    navbar: ['Почему Salam', 'Успешные истории', 'Поддержать Salam'],
+    title: 'Снова станьте лучшей версией себя.',
+    description: `
+          <span style="font-weight: 700">Бесплатное приложение</span>, блокирующее доступ
+          к порнографическому контенту. Salam блокирует более
+          <span style="font-weight: 700">
+              1 000+ взрослых веб-сайтов
+          </span>
+          и
+          <span style="font-weight: 700">
+              5 000+ веб-сайтов с незаконно вставленными изображениями
+          </span>
+          (и их количество растет). Наша цель - освободить всех от оков этой
+          тревожной зависимости.
+      `,
+    supportButton: 'Пожертвовать на поддержку',
+    disclaimer:
+      'Salam - это Садака Джария. Он не ориентирован на прибыль, ваши пожертвования делают разницу.',
+    footer: [
+      'Условия использования',
+      'Политика конфиденциальности',
+      'Пресс-кит',
+      'Поддержка',
+    ],
   },
 }

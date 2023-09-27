@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { Box } from '@mui/material'
 import HamburgerMenu from 'assets/svg/HamburgerMenu'
 import icon from 'assets/svg/DownloadFromAppStoreMobile.svg'
-import DesignCredits from 'assets/svg/DesignCredits.svg'
-import Dropdown from 'assets/svg/Dropdown'
+import DesignCredits from 'assets/images/download.png'
 import DropdownIcon from 'assets/svg/Dropdown'
 import CustomSelect from 'components/CustomSelect'
 import { languages } from 'utils/translation'
@@ -73,13 +72,7 @@ const LandingPage = () => {
             dangerouslySetInnerHTML={{
               __html: languages[language].description,
             }}
-          >
-            {/* <div
-              dangerouslySetInnerHTML={{
-                __html: languages[language].description,
-              }}
-            ></div> */}
-          </p>
+          ></p>
           <div className='pt-[50px] flex items-center justify-between md:justify-normal gap-0 md:gap-[20px]'>
             <img
               src={icon}
@@ -88,8 +81,15 @@ const LandingPage = () => {
               alt='download'
             />
 
-            <button className='w-[191px] md:w-[263px] h-[49px] md:h-[60px] text-[18px] md:text-[23px] font-bold flex items-center justify-center border-[#FFCF4D] border-[5px] rounded-[25px]'>
-              Donate to Support
+            <button
+              className={`min-w-[191px] md:min-w-[263px] h-[49px] md:h-[60px] 
+                ${
+                  language === 'Russian' || language === 'Turkish'
+                    ? 'text-[14px]'
+                    : 'text-[18px]'
+                } md:text-[23px] font-bold flex items-center justify-center border-[#FFCF4D] border-[5px] rounded-[25px] px-2`}
+            >
+              {languages[language].supportButton}
             </button>
           </div>
           <p className='pt-[21px] font-medium text-[17px] italic md:text-[20px]'>
@@ -97,15 +97,15 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <div className='bg-white lg:bg-[#F0F0F0] rounded-none lg:rounded-[31.5px] flex flex-col lg:flex-row justify-normal items-center lg:justify-between gap-[29px] mt-[145px] md:mt-[65px] lg:mt-[274px] h-auto lg:h-[63px] px-0 lg:pl-[50px] lg:pr-[52px]'>
-          <div className='bg-[#F0F0F0] lg:bg-transparent rounded-[31.5px] text-[#5E5E5E] text-[15px] md:text-[18px] font-semibold grid grid-cols-2 lg:grid-flow-col gap-[25px] gap-x-[50px] md:gap-x-[120px] lg:gap-x-[33px] w-full lg:w-auto px-[40px] md:px-[79.22px] lg:px-0 py-[25px] md:py-[23px] lg:py-0'>
+        <div className='bg-white xl:bg-[#F0F0F0] rounded-none xl:rounded-[31.5px] flex flex-col xl:flex-row justify-normal items-center xl:justify-between gap-[29px] mt-[145px] md:mt-[65px] xl:mt-[210px] h-auto xl:h-[63px] px-0 xl:pl-[50px] xl:pr-[52px]'>
+          <div className='bg-[#F0F0F0] xl:bg-transparent rounded-[31.5px] text-[#5E5E5E] text-[15px] md:text-[18px] font-semibold grid grid-cols-2 xl:grid-flow-col gap-[25px] gap-x-[50px] md:gap-x-[120px] xl:gap-x-[33px] w-full xl:w-auto px-[40px] md:px-[79.22px] xl:px-0 py-[25px] md:py-[23px] xl:py-0'>
             {languages[language].footer.map((title, index) => (
               <a
                 key={title}
                 href={title}
                 className={`${
                   index === languages[language].footer.length - 1
-                    ? 'block lg:hidden'
+                    ? 'block xl:hidden'
                     : ''
                 }`}
               >
@@ -113,12 +113,12 @@ const LandingPage = () => {
               </a>
             ))}
           </div>
-          <p className='text-[#5E5E5E] text-center font-semibold text-[15px] lg:text-lg'>
+          <p className='text-[#5E5E5E] text-center font-semibold text-[15px] xl:text-xl'>
             Copyright © 2023 Salam, All rights reserved
           </p>
-          <p className='pb-[39.28px] lg:pb-0 text-[#5E5E5E] text-center font-semibold text-[15px] lg:text-lg flex gap-2 items-center'>
-            Designed by{' '}
-            <img src={DesignCredits} fill={'green'} alt='download' />
+          <p className='pb-[39.28px] xl:pb-0 text-[#5E5E5E] text-center font-semibold text-[15px] xl:text-xl flex gap-2 items-center'>
+            Designed by
+            <img className='w-[48px]' src={DesignCredits} alt='laukhder' />
           </p>
         </div>
       </Box>
