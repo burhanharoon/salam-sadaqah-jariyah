@@ -74,20 +74,21 @@ const LandingPage = () => {
             }}
           ></p>
           <div className='pt-[50px] flex items-center justify-between md:justify-normal gap-0 md:gap-[20px]'>
-            <img
-              src={icon}
-              className='w-[146px] h-[49px] md:w-[179px] md:h-[60px]'
-              fill={'green'}
-              alt='download'
-            />
-
+            <button className='scale-100 hover:scale-105 transition-all hover:shadow-lg'>
+              <img
+                src={icon}
+                className='w-[146px] h-[49px] md:w-[179px] md:h-[60px]'
+                fill={'green'}
+                alt='download'
+              />
+            </button>
             <button
               className={`min-w-[191px] md:min-w-[263px] h-[49px] md:h-[60px] 
                 ${
                   language === 'Russian' || language === 'Turkish'
                     ? 'text-[14px]'
                     : 'text-[18px]'
-                } md:text-[23px] font-bold flex items-center justify-center border-[#FFCF4D] border-[5px] rounded-[25px] px-2`}
+                } md:text-[23px] font-bold flex items-center justify-center border-[#FFCF4D] border-[5px] rounded-[25px] px-2 scale-100 hover:scale-105 transition-all hover:shadow-lg`}
             >
               {languages[language].supportButton}
             </button>
@@ -97,7 +98,7 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <div className='bg-white xl:bg-[#F0F0F0] rounded-none xl:rounded-[31.5px] flex flex-col xl:flex-row justify-normal items-center xl:justify-between gap-[29px] mt-[145px] md:mt-[65px] xl:mt-[210px] h-auto xl:h-[63px] px-0 xl:pl-[50px] xl:pr-[52px]'>
+        <div className='bg-white xl:bg-[#F0F0F0] rounded-none xl:rounded-[31.5px] flex flex-col xl:flex-row justify-normal items-center xl:justify-between gap-[29px] mt-[145px] md:mt-[65px] xl:mt-[180px] h-auto xl:h-[63px] px-0 xl:pl-[50px] xl:pr-[52px]'>
           <div className='bg-[#F0F0F0] xl:bg-transparent rounded-[31.5px] text-[#5E5E5E] text-[15px] md:text-[18px] font-semibold grid grid-cols-2 xl:grid-flow-col gap-[25px] gap-x-[50px] md:gap-x-[120px] xl:gap-x-[33px] w-full xl:w-auto px-[40px] md:px-[79.22px] xl:px-0 py-[25px] md:py-[23px] xl:py-0'>
             {languages[language].footer.map((title, index) => (
               <a
