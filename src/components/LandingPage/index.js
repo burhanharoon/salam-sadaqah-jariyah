@@ -98,10 +98,7 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <div
-          className='bg-white xl:bg-[#F0F0F0] rounded-none xl:rounded-[31.5px] flex flex-col xl:flex-row justify-normal items-center xl:justify-between gap-[29px] mt-[145px] md:mt-[65px] xl:mt-[160
-        px] h-auto xl:h-[63px] px-0 xl:pl-[50px] xl:pr-[52px]'
-        >
+        <div className='bg-white xl:bg-[#F0F0F0] rounded-none xl:rounded-[31.5px] flex flex-col xl:flex-row justify-normal items-center xl:justify-between gap-[29px] mt-[145px] md:mt-[65px] xl:mt-[175px] h-auto xl:h-[63px] px-0 xl:pl-[50px] xl:pr-[52px]'>
           <div className='bg-[#F0F0F0] xl:bg-transparent rounded-[31.5px] text-[#5E5E5E] text-[15px] md:text-[18px] font-semibold grid grid-cols-2 xl:grid-flow-col gap-[25px] gap-x-[50px] md:gap-x-[120px] xl:gap-x-[33px] w-full xl:w-auto px-[40px] md:px-[79.22px] xl:px-0 py-[25px] md:py-[23px] xl:py-0'>
             {languages[language].footer.map((title, index) => (
               <a
